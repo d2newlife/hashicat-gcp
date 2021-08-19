@@ -38,6 +38,7 @@ resource "google_compute_firewall" "http-server" {
   target_tags   = ["http-server"]
 }
 
+
 resource "tls_private_key" "ssh-key" {
   algorithm = "RSA"
   rsa_bits  = "4096"
